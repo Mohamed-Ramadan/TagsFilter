@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA1DA9B826BFD872003B59FB /* UnionCoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnionCoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1DA9B826BFD872003B59FB /* TagsFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagsFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1DA9BB26BFD872003B59FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA1DA9BD26BFD872003B59FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA1DA9C226BFD872003B59FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TagsViewController.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		FA1DA9AF26BFD872003B59FB = {
 			isa = PBXGroup;
 			children = (
-				FA1DA9BA26BFD872003B59FB /* UnionCoop */,
+				FA1DA9BA26BFD872003B59FB /* TagsFilter */,
 				FA1DA9B926BFD872003B59FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,12 +80,12 @@
 		FA1DA9B926BFD872003B59FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA1DA9B826BFD872003B59FB /* UnionCoop.app */,
+				FA1DA9B826BFD872003B59FB /* TagsFilter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA1DA9BA26BFD872003B59FB /* UnionCoop */ = {
+		FA1DA9BA26BFD872003B59FB /* TagsFilter */ = {
 			isa = PBXGroup;
 			children = (
 				FA1DA9D226BFD87A003B59FB /* Application */,
@@ -97,7 +97,7 @@
 				FA1DA9CC26BFD875003B59FB /* Info.plist */,
 				FA1DA9C426BFD872003B59FB /* UnionCoop.xcdatamodeld */,
 			);
-			path = UnionCoop;
+			path = TagsFilter;
 			sourceTree = "<group>";
 		};
 		FA1DA9D226BFD87A003B59FB /* Application */ = {
@@ -262,9 +262,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA1DA9B726BFD872003B59FB /* UnionCoop */ = {
+		FA1DA9B726BFD872003B59FB /* TagsFilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA1DA9CF26BFD875003B59FB /* Build configuration list for PBXNativeTarget "UnionCoop" */;
+			buildConfigurationList = FA1DA9CF26BFD875003B59FB /* Build configuration list for PBXNativeTarget "TagsFilter" */;
 			buildPhases = (
 				FA1DA9B426BFD872003B59FB /* Sources */,
 				FA1DA9B526BFD872003B59FB /* Frameworks */,
@@ -274,9 +274,9 @@
 			);
 			dependencies = (
 			);
-			name = UnionCoop;
+			name = TagsFilter;
 			productName = UnionCoop;
-			productReference = FA1DA9B826BFD872003B59FB /* UnionCoop.app */;
+			productReference = FA1DA9B826BFD872003B59FB /* TagsFilter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA1DA9B326BFD872003B59FB /* Build configuration list for PBXProject "UnionCoop" */;
+			buildConfigurationList = FA1DA9B326BFD872003B59FB /* Build configuration list for PBXProject "TagsFilter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -306,7 +306,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA1DA9B726BFD872003B59FB /* UnionCoop */,
+				FA1DA9B726BFD872003B59FB /* TagsFilter */,
 			);
 		};
 /* End PBXProject section */
@@ -496,12 +496,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NHB6XUG436;
-				INFOPLIST_FILE = UnionCoop/Info.plist;
+				INFOPLIST_FILE = TagsFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mr.UnionCoop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.TagsFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,12 +515,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NHB6XUG436;
-				INFOPLIST_FILE = UnionCoop/Info.plist;
+				INFOPLIST_FILE = TagsFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mr.UnionCoop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.TagsFilter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -530,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA1DA9B326BFD872003B59FB /* Build configuration list for PBXProject "UnionCoop" */ = {
+		FA1DA9B326BFD872003B59FB /* Build configuration list for PBXProject "TagsFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA1DA9CD26BFD875003B59FB /* Debug */,
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA1DA9CF26BFD875003B59FB /* Build configuration list for PBXNativeTarget "UnionCoop" */ = {
+		FA1DA9CF26BFD875003B59FB /* Build configuration list for PBXNativeTarget "TagsFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA1DA9D026BFD875003B59FB /* Debug */,
