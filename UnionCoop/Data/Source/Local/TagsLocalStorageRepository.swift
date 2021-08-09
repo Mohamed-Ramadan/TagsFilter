@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol TagsLocalStorage {
+    func getTags() -> [Tag]
+    func saveTags(tags: [Tag])
+}

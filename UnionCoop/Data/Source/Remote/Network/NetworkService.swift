@@ -7,30 +7,27 @@
 
 import Foundation
 
-class NetworkService {
-    
-    static let serverURl = "https://api.stackexchange.com/2.2/questions/no-answers?"
-    static let username = "stackexchange"
-    static let password = "admin@123456"
-    static let contentType = "application/json"
-    static let lang = "en"
-    static let deviceType = "IOS"
-    
-    static func getRemoteTags(min: Int, tagged: String, fromDate: TimeInterval, toDate: TimeInterval, order: String, sort: String, site: String, completion:  @escaping (DataCallbackCompletion) -> Void) {
+protocol NetworkService {
+    func getRemoteTags(min: Int, tagged: String, fromDate: Int64, toDate: Int64, order: String, sort: String, site: String, completion:  @escaping (DataCallbackCompletion) -> Void)
+}
+
+class URLSessionNetworkService: NetworkService {
+     
+    func getRemoteTags(min: Int, tagged: String, fromDate: Int64, toDate: Int64, order: String, sort: String, site: String, completion:  @escaping (DataCallbackCompletion) -> Void) {
         
-        let urlString = serverURl + "min=\(min)&tagged=\(tagged)&fromdate=\(fromDate)&todate=\(toDate)&order=asc&sort=votes&site=stackoverflow"
-        guard let url = URL(string: urlString) else {
+        let urlString = Constants.serverURl + "min=\(min)&tagged=\(tagged)&fromdate=\(Int(fromDate))&todate=\(Int(toDate))&order=asc&sort=votes&site=stackoverflow"
+        guard let urlEncodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed), let url = URL(string: urlEncodedString) else {
             print("Wrong URL!: \(urlString)")
             return
         }
         
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "GET"
-        urlRequest.addValue("stackexchange", forHTTPHeaderField: "Username")
-        urlRequest.addValue("admin@123456", forHTTPHeaderField: "Password")
-        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        urlRequest.addValue("en", forHTTPHeaderField: "Lang")
-        urlRequest.addValue("IOS", forHTTPHeaderField: "DeviceType")
+        urlRequest.httpMethod = HTTPMethod.get.rawValue
+        urlRequest.addValue(Constants.username, forHTTPHeaderField: "Username")
+        urlRequest.addValue(Constants.password, forHTTPHeaderField: "Password")
+        urlRequest.addValue(Constants.contentType, forHTTPHeaderField: "Content-Type")
+        urlRequest.addValue(Constants.lang, forHTTPHeaderField: "Lang")
+        urlRequest.addValue(Constants.deviceType, forHTTPHeaderField: "DeviceType")
         
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
