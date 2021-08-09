@@ -10,7 +10,6 @@
 		FA1DA9BC26BFD872003B59FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DA9BB26BFD872003B59FB /* AppDelegate.swift */; };
 		FA1DA9BE26BFD872003B59FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DA9BD26BFD872003B59FB /* SceneDelegate.swift */; };
 		FA1DA9C326BFD872003B59FB /* TagsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1DA9C126BFD872003B59FB /* TagsViewController.storyboard */; };
-		FA1DA9C626BFD872003B59FB /* TagsFilter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1DA9C426BFD872003B59FB /* TagsFilter.xcdatamodeld */; };
 		FA1DA9C826BFD875003B59FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1DA9C726BFD875003B59FB /* Assets.xcassets */; };
 		FA1DA9CB26BFD875003B59FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1DA9C926BFD875003B59FB /* LaunchScreen.storyboard */; };
 		FA1DA9DE26BFD9D7003B59FB /* TagsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1DA9DD26BFD9D7003B59FB /* TagsViewController.swift */; };
@@ -36,7 +35,6 @@
 		FA1DA9BB26BFD872003B59FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA1DA9BD26BFD872003B59FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA1DA9C226BFD872003B59FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TagsViewController.storyboard; sourceTree = "<group>"; };
-		FA1DA9C526BFD872003B59FB /* UnionCoop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnionCoop.xcdatamodel; sourceTree = "<group>"; };
 		FA1DA9C726BFD875003B59FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1DA9CA26BFD875003B59FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA1DA9CC26BFD875003B59FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				FA1DA9C726BFD875003B59FB /* Assets.xcassets */,
 				FA1DA9C926BFD875003B59FB /* LaunchScreen.storyboard */,
 				FA1DA9CC26BFD875003B59FB /* Info.plist */,
-				FA1DA9C426BFD872003B59FB /* TagsFilter.xcdatamodeld */,
 			);
 			path = TagsFilter;
 			sourceTree = "<group>";
@@ -339,7 +336,6 @@
 				FA1DA9EA26BFDD07003B59FB /* TagsUseCase.swift in Sources */,
 				FA1DA9F826BFF441003B59FB /* TagTableViewCell.swift in Sources */,
 				FA1DA9E726BFDCC2003B59FB /* TagsResponse.swift in Sources */,
-				FA1DA9C626BFD872003B59FB /* TagsFilter.xcdatamodeld in Sources */,
 				FA1DA9BC26BFD872003B59FB /* AppDelegate.swift in Sources */,
 				FA1DA9F326BFE949003B59FB /* TagsLocalStorageRepository.swift in Sources */,
 				FA1DA9BE26BFD872003B59FB /* SceneDelegate.swift in Sources */,
@@ -549,19 +545,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FA1DA9C426BFD872003B59FB /* TagsFilter.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FA1DA9C526BFD872003B59FB /* UnionCoop.xcdatamodel */,
-			);
-			currentVersion = FA1DA9C526BFD872003B59FB /* UnionCoop.xcdatamodel */;
-			path = TagsFilter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FA1DA9B026BFD872003B59FB /* Project object */;
 }
